@@ -1,0 +1,28 @@
+name: saffy-rosy-ice-cream
+version: 0.1.0.0
+synopsis: "CTF Problem: Saffy & Rosy Ice Cream"
+license: AllRightsReserved
+author: NetSec
+maintainer: qzy@g.ucla.edu
+default-extensions: OverloadedStrings
+ghc-options: -Wall -O2
+
+executables:
+
+  saffy-rosy-ice-cream-app:
+    main: Main.hs
+    ghc-options: -threaded "-with-rtsopts=-N -I"
+    dependencies:
+      - base
+      - containers
+      - http-types
+      - lucid
+      - stm
+      - network-uri
+      - bytestring
+      - wai-extra
+      - mime-types
+      - text
+      - wai
+      - warp
+      - mtl
