@@ -29,3 +29,10 @@ cannot guarantee that years from today, these containers can still be built.
 
 For non web problems, we generally use a simpler build procedure. Sometimes we
 provide simple Makefiles.
+
+## Archived!
+
+This repo is archived and read-only. Please do not submit issues or PRs. Even if
+there might be issues, we don't want to fix it because we want to preserve the
+original state of the problem as it happened during the CTF. Feel free to fork
+it however; we have a liberal license!
