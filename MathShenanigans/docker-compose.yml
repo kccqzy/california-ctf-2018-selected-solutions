@@ -1,0 +1,20 @@
+version: '2'
+services:
+  mssi_db:
+    build: ./Math_Shenanigans_DB
+    restart: unless-stopped
+    mem_limit: 2g
+  mssi:
+    build: ./Math_Shenanigans_SQL_injection
+    links:
+      - "mssi_db:mssi_db"
+    ports: ["8083:80"]
+    restart: unless-stopped
+    mem_limit: 2g
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE
