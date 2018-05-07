@@ -11,6 +11,9 @@ it); others are very hard (only one or two teams could solve it). Some
 problems are fairly commonplace, and similar problems are employed at other
 beginner CTFs; others could be quite unique.
 
+Note that only selected problems have their solutions published! This is so
+that we may reuse some problems for the future.
+
 ## Technical Details
 
 For web problems (those involving the organizing setting up a server in
